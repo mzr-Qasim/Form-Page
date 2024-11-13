@@ -34,7 +34,25 @@
         position: absolute;
     
     }
+    .zip-code-inner{
+        display: flex;
+        align-items: center!important;
+        .zip-code-input{
+            width: 60%;
+            padding-right: 1rem;
+            align-items: center;
+            margin-bottom: 0;
+        }
+        .category{
+            width: 40%;
+            padding: 0.2rem 0;
+            text-align: center;
+
+        }
+    }
 }
+
+
 
 
 @media (max-width: 576px){
@@ -42,4 +60,5 @@
     .right-section-wrapper{
         padding: 0;
     }
+
 }

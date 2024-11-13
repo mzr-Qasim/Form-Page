@@ -12158,6 +12158,14 @@ figure {
   padding: 0.3rem 0;
   border-radius: 5px;
 }
+.zip-code-inner .zip-code-input input::-moz-placeholder {
+  padding: 0 1rem;
+  font-size: 0.8rem;
+}
+.zip-code-inner .zip-code-input input::placeholder {
+  padding: 0 1rem;
+  font-size: 0.8rem;
+}
 
 .zip-code-inner .category {
   width: 40%;
@@ -12165,7 +12173,7 @@ figure {
   border: 1px solid;
   border-radius: 5px;
   border-color: rgb(98, 98, 98);
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 1rem;
 }
 
 .anchors {
@@ -12218,6 +12226,21 @@ figure {
   .right-section {
     width: 100%;
     position: absolute;
+  }
+  .zip-code-inner {
+    display: flex;
+    align-items: center !important;
+  }
+  .zip-code-inner .zip-code-input {
+    width: 60%;
+    padding-right: 1rem;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .zip-code-inner .category {
+    width: 40%;
+    padding: 0.2rem 0;
+    text-align: center;
   }
 }
 @media (max-width: 576px) {
