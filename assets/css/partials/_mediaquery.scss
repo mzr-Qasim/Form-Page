@@ -1,0 +1,45 @@
+@media (max-width: 992px){
+    .zip-code-inner{
+        display: block;
+        .zip-code-input{
+            width: 100%;
+            padding-right: 0;
+            margin-bottom: 1rem;
+        }
+        .category{
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .left-section{
+        width: 100%;       
+    }
+    
+    .left-section-inner{
+        figure
+            img{
+                opacity: 0.1;
+            }
+        .figcaption-inner{
+            display: none;
+
+        }
+    }
+
+    .right-section{
+        width: 100%;
+        position: absolute;
+    
+    }
+}
+
+
+@media (max-width: 576px){
+
+    .right-section-wrapper{
+        padding: 0;
+    }
+}
