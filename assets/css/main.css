@@ -1,9 +1,9 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?6b121d");
-  src: url("fonts/icomoon.eot?6b121d#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?6b121d") format("truetype"), url("fonts/icomoon.woff?6b121d") format("woff"), url("fonts/icomoon.svg?6b121d#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?i9ja4t");
+  src: url("fonts/icomoon.eot?i9ja4t#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?i9ja4t") format("truetype"), url("fonts/icomoon.woff?i9ja4t") format("woff"), url("fonts/icomoon.svg?i9ja4t#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -11,6 +11,7 @@
 [class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -21,16 +22,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-x-circle:before {
+  content: "\e900";
+}
+
 .icon-search:before {
-  content: "\e986";
+  content: "\e901";
 }
 
-.icon-cancel-circle:before {
-  content: "\ea0d";
-}
-
-.icon-arrow-up2:before {
-  content: "\ea3a";
+.icon-upload:before {
+  content: "\e902";
 }
 
 /*!
@@ -12002,7 +12003,30 @@ textarea.form-control-lg {
 body {
   overflow: hidden;
   overflow-y: auto;
-  font-family: "Oswald", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+.theme-btn {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  padding: 0 1.25rem;
+  border-radius: 5px;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  text-align: center;
+}
+
+.theme-btn-yellow {
+  background-color: #f5e22c;
+  color: #000000;
+  border: 1px solid #f5e22c;
+}
+
+.theme-btn-bordered {
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #000000;
 }
 
 ul {
@@ -12011,28 +12035,12 @@ ul {
   padding: 0;
 }
 
-h1, .h1 {
-  margin: 0;
-}
-
-h2, .h2 {
-  margin: 0;
-}
-
-h4, .h4 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, p, figure {
   margin: 0;
 }
 
 a {
   text-decoration: none;
-}
-
-p {
-  margin: 0;
-}
-
-figure {
-  margin: 0;
 }
 
 .main-content {
@@ -12087,7 +12095,7 @@ figure {
 
 .right-section {
   width: 50%;
-  padding: 0 2rem;
+  padding: 0 6rem;
 }
 
 .right-section .close-button {
@@ -12099,10 +12107,6 @@ figure {
 }
 .right-section .close-button a i {
   font-size: 1.2rem;
-}
-
-.right-section-wrapper {
-  padding: 0 4rem;
 }
 
 .right-section-inner {
@@ -12136,10 +12140,12 @@ figure {
   opacity: 0;
   cursor: pointer;
 }
+.image-upload-box span {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
 
 .zip-code-inner {
-  display: flex;
-  align-items: center;
   margin-bottom: 2.5rem;
 }
 
@@ -12148,69 +12154,51 @@ figure {
 }
 
 .zip-code-inner .zip-code-input {
-  width: 60%;
-  padding-right: 1rem;
+  position: relative;
+}
+.zip-code-inner .zip-code-input i {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  color: rgb(98, 98, 98);
 }
 .zip-code-inner .zip-code-input input {
   width: 100%;
   border: 1px solid;
   border-color: rgb(98, 98, 98);
-  padding: 0.3rem 0;
+  height: 2.2rem;
   border-radius: 5px;
+  padding-left: 1.75rem;
 }
 .zip-code-inner .zip-code-input input::-moz-placeholder {
-  padding: 0 1rem;
   font-size: 0.8rem;
+  color: rgb(98, 98, 98);
 }
 .zip-code-inner .zip-code-input input::placeholder {
-  padding: 0 1rem;
   font-size: 0.8rem;
+  color: rgb(98, 98, 98);
 }
 
 .zip-code-inner .category {
-  width: 40%;
-  font-size: calc(0.4rem + 0.25vw);
+  position: relative;
+  font-size: calc(0.5rem + 0.25vw);
   border: 1px solid;
   border-radius: 5px;
   border-color: rgb(98, 98, 98);
-  padding: 0.2rem 1rem;
+  height: 2.2rem;
+}
+.zip-code-inner .category .category-inner {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.anchors {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.anchors a {
-  color: #000000;
-  border: 1px solid;
-  border-color: rgb(98, 98, 98);
-  border-radius: 5px;
-  width: 48%;
-  text-align: center;
-  padding: 5px 0;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-.anchors a:first-child {
-  margin-right: 4%;
-}
-.anchors a:nth-child(2) {
-  background-color: #f5e22c;
-  border: 0;
-}
-
-@media (max-width: 992px) {
-  .zip-code-inner {
-    display: block;
-  }
-  .zip-code-inner .zip-code-input {
-    width: 100%;
-    padding-right: 0;
-    margin-bottom: 1rem;
-  }
-  .zip-code-inner .category {
-    width: 100%;
+@media (max-width: 1200px) {
+  .right-section {
+    padding: 0 3rem;
   }
 }
 @media (max-width: 768px) {
@@ -12227,24 +12215,18 @@ figure {
     width: 100%;
     position: absolute;
   }
-  .zip-code-inner {
-    display: flex;
-    align-items: center !important;
-  }
-  .zip-code-inner .zip-code-input {
-    width: 60%;
-    padding-right: 1rem;
-    align-items: center;
-    margin-bottom: 0;
-  }
-  .zip-code-inner .category {
-    width: 40%;
-    padding: 0.2rem 0;
-    text-align: center;
-  }
 }
 @media (max-width: 576px) {
   .right-section-wrapper {
     padding: 0;
+  }
+  .right-section {
+    padding: 0 1rem;
+  }
+  .zip-code-inner .zip-code-input {
+    margin-bottom: 1rem;
+  }
+  .btn-wrapper {
+    margin-bottom: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */

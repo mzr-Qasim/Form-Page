@@ -1,20 +1,44 @@
 $primary-color: #f5e22c;
 $secondary-color: #a1c3c6;
-
-
-
 $black-color: #000000;
 $white-color: #FFFFFF;
-$form-color: rgb(98, 98, 98);
 
+
+$form-color: rgb(98, 98, 98);
+$form-fields-font-size: 0.8rem;
+$category-font-size: 0.5rem;
 $form-border-radius: 5px;
+$form-fields-height: 2.2rem;
 
 body{
     overflow: hidden;
     overflow-y: auto;
-    font-family: "Oswald", sans-serif;
+    font-family: "Open Sans", sans-serif;
 
 }
+
+
+.theme-btn{
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    padding: 0 1.25rem;
+    border-radius: $form-border-radius;
+    height:$form-fields-height;
+    line-height: $form-fields-height;
+    text-align: center;
+}
+.theme-btn-yellow{
+   background-color: $primary-color;
+   color: $black-color;
+   border: 1px solid $primary-color;
+}
+
+.theme-btn-bordered{
+    background-color: transparent;
+    color: $black-color;
+    border: 1px solid $black-color;
+ }
 
 ul{
     list-style-type: none;
@@ -22,29 +46,12 @@ ul{
     padding: 0;
 }
 
-h1{
+h1, h2, h3, h4, p, figure{
     margin: 0;
 }
 
-h2{
-    margin: 0;
-}
-
-h4{
-    margin: 0;
-}
 
 
 a{
     text-decoration: none;
-}
-
-
-p{
-    margin: 0;
-}
-
-
-figure{
-    margin: 0;
 }
