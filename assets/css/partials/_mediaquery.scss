@@ -7,6 +7,8 @@
 
 
 @media (max-width: 768px){
+
+   
     .left-section{
         width: 100%;       
     }  
@@ -22,7 +24,9 @@
     }
     .right-section{
         width: 100%;
-        position: absolute;    
+        position: absolute;
+
+
     }
 
 }
@@ -36,6 +40,12 @@
         padding: 0 1rem;
     
     }
+    .image-upload-box{
+        max-width: 160px;
+        min-height: 90px;
+        border: 1px dashed;
+    }
+
     .zip-code-inner{
         .zip-code-input{
             margin-bottom: 1rem;

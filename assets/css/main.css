@@ -12223,6 +12223,11 @@ a {
   .right-section {
     padding: 0 1rem;
   }
+  .image-upload-box {
+    max-width: 160px;
+    min-height: 90px;
+    border: 1px dashed;
+  }
   .zip-code-inner .zip-code-input {
     margin-bottom: 1rem;
   }
