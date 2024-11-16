@@ -77,14 +77,17 @@
 .right-section{
     width: 50%;
     padding: 0 6rem;
+    position: relative;
 
 }
 
 
 .right-section{
     .close-button{
-        display: flex; 
-        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 90%;
+        transform: translate(0, -50%);
         a{
             color: $form-color;
             i{
@@ -130,7 +133,6 @@
         position: absolute;
         inset: 0;
         opacity: 0;
-        cursor: pointer;
 
     }
     span{
@@ -198,6 +200,38 @@
         }
     }
 
+}
+
+
+// Form-Page-2
+
+
+
+.login-search-pod{
+    border: 1px solid;
+    height: $form-radio-height;
+    border-color: $form-color;
+    border-radius: $form-border-radius;
+    padding: $form-x-axis-padding;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+
+
+    span{
+
+        font: {
+            size: $form-fields-font-size;
+        };
+        strong{
+            display: block;
+        }
+    }
+
+    input[type="radio"]{
+        accent-color: green;
+    }
 }
 
 

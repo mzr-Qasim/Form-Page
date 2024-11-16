@@ -9,6 +9,10 @@ $form-fields-font-size: 0.8rem;
 $category-font-size: 0.5rem;
 $form-border-radius: 5px;
 $form-fields-height: 2.2rem;
+$form-x-axis-padding: 0.5rem;
+
+$form-radio-height: 2.5rem;
+$form-radio-line-height: 1.5rem;
 
 body{
     overflow: hidden;
@@ -54,4 +58,15 @@ h1, h2, h3, h4, p, figure{
 
 a{
     text-decoration: none;
+}
+
+
+.radio-button-theme{
+    border: 1px solid;
+    border-color: $form-color;
+    height: $form-radio-height;
+    line-height: $form-radio-line-height;
+    font-size: $form-fields-font-size;
+    border-radius: $form-border-radius;
+    padding: 0 $form-x-axis-padding;
 }
