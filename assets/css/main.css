@@ -12222,6 +12222,15 @@ a {
 .login-search-pod span {
   font-size: 0.8rem;
 }
+.login-search-pod span:first-child {
+  flex: 1;
+}
+.login-search-pod span:nth-child(2) {
+  flex: 2;
+}
+.login-search-pod span:nth-child(3) {
+  flex: 2;
+}
 .login-search-pod span strong {
   display: block;
 }
