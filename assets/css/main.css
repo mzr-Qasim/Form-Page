@@ -12208,6 +12208,11 @@ a {
   transform: translateY(-50%);
 }
 
+.title-2 {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
 .login-search-pod {
   border: 1px solid;
   height: 2.5rem;
@@ -12220,7 +12225,7 @@ a {
   margin-bottom: 0.5rem;
 }
 .login-search-pod span {
-  font-size: 0.8rem;
+  font-size: calc(0.4rem + 0.5vw);
 }
 .login-search-pod span:first-child {
   flex: 1;
@@ -12234,8 +12239,13 @@ a {
 .login-search-pod span strong {
   display: block;
 }
-.login-search-pod input[type=radio] {
-  accent-color: green;
+.login-search-pod span strong.n-a {
+  color: red;
+}
+
+.title-3 {
+  margin-bottom: 0.5rem;
+  font-size: calc(0.4rem + 0.5vw);
 }
 
 @media (max-width: 1200px) {
@@ -12274,5 +12284,14 @@ a {
   }
   .btn-wrapper {
     margin-bottom: 1rem;
+  }
+  .login-search-pod span:first-child {
+    flex: 2;
+  }
+  .login-search-pod span:nth-child(2) {
+    flex: 2;
+  }
+  .login-search-pod span:nth-child(3) {
+    flex: 2;
   }
 }/*# sourceMappingURL=main.css.map */

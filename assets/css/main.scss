@@ -205,7 +205,12 @@
 
 // Form-Page-2
 
+.title-2{
 
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+
+}
 
 .login-search-pod{
     border: 1px solid;
@@ -231,18 +236,30 @@
         }
 
         font: {
-            size: $form-fields-font-size;
+            size: $form-radio-font;
         };
         strong{
             display: block;
         }
+        strong.n-a{
+            color: red;
+        }
     }
 
-    input[type="radio"]{
-        accent-color: green;
-    }
+    // input[type="radio"]{
+    //     accent-color: red;
+
+    // }
+
+
 }
 
+.title-3{
+    margin-bottom: 0.5rem;
+    font: {
+        size: $form-radio-font;
+    };
+}
 
 
 @import './partials/mediaquery';
