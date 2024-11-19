@@ -9,14 +9,20 @@ $form-fields-font-size: 0.8rem;
 $category-font-size: 0.5rem;
 $form-border-radius: 5px;
 $form-fields-height: 2.2rem;
+$form-y-axis-padding: 1.5rem;
 $form-x-axis-padding: 0.5rem;
+
 
 
 $form-radio-height: 2.5rem;
 $form-radio-line-height: 1.5rem;
-$form-radio-font: calc(0.4rem + 0.5vw);
+$form-radio-font: calc(0.3rem + 0.5vw);
 
 
+
+
+$theme-links-height:2rem;
+$theme-links-border-radius: 20px;
 body{
     overflow: hidden;
     overflow-y: auto;
@@ -72,4 +78,17 @@ a{
     font-size: $form-fields-font-size;
     border-radius: $form-border-radius;
     padding: 0 $form-x-axis-padding;
+}
+
+
+
+.theme-links{
+    display: inline-block;
+    border: 1px solid;
+    border-color: $form-color;
+    text-transform: capitalize;
+    border-radius: $theme-links-border-radius;
+    height: $theme-links-height;
+    padding: 0.2rem 1rem;
+    color: $black-color;
 }

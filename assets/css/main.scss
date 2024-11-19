@@ -217,14 +217,15 @@
     height: $form-radio-height;
     border-color: $form-color;
     border-radius: $form-border-radius;
-    padding: $form-x-axis-padding;
+    padding: $form-y-axis-padding $form-x-axis-padding ;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: .5rem;
 
-
+    
     span{
+
         &:first-child{
             flex: 1;
         }
@@ -235,9 +236,17 @@
             flex: 2;
         }
 
+
+
         font: {
             size: $form-radio-font;
         };
+
+        b{
+            font-weight: 500;
+            color: $form-color;
+        }
+
         strong{
             display: block;
         }
@@ -254,12 +263,93 @@
 
 }
 
+
+
 .title-3{
     margin-bottom: 0.5rem;
     font: {
-        size: $form-radio-font;
+        size: 0.8rem;
     };
 }
 
 
+
+// Dashboard
+
+.search-field{
+    position: relative;
+
+
+    input{
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding-left: 50%;
+        padding-right: 1.5rem;
+        width: 300px;
+    }
+
+    .search-title{
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        p{
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        i{
+            padding-left: 0.2rem;
+            font-size: 0.8rem;
+            border-left: 1px solid black;
+        }
+    }
+    .icon-search{
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: $form-fields-font-size;
+        color: $form-color; 
+        font-size: 0.8rem;
+    }
+    
+}
+
+
+
+
+
+.form-control {
+    border-radius: $theme-links-border-radius;
+    border-color: $form-color;
+    height: $theme-links-height;
+}
+
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+    margin: 0.5rem;
+}
+
+
+
+.custom-right-nav{
+    display: flex;
+    li{
+        padding: 0.5rem;
+
+        a{
+            color: $black-color;
+        }
+    }
+}
+
+
+
+
+
+
 @import './partials/mediaquery';
+
+
