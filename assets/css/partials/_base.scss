@@ -3,6 +3,7 @@ $secondary-color: #a1c3c6;
 $black-color: #000000;
 $white-color: #FFFFFF;
 
+$min-font-size: 1rem;
 
 $form-color: rgb(98, 98, 98);
 $form-fields-font-size: 0.8rem;
@@ -89,6 +90,10 @@ a{
     text-transform: capitalize;
     border-radius: $theme-links-border-radius;
     height: $theme-links-height;
-    padding: 0.2rem 1rem;
+    line-height: $theme-links-height;
+    padding: 0 1rem;
     color: $black-color;
+    font-size: 0.7rem;
+    font-weight: bold;
+
 }
