@@ -12090,6 +12090,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.black {
+  color: #000000 !important;
+}
+
 .theme-btn {
   display: inline-block;
   border: none;
@@ -12168,6 +12172,45 @@ a {
   padding: 0.5rem;
   border-radius: 50%;
   background-color: #FFFFFF;
+}
+
+.section-border {
+  border: 1px solid;
+  border-color: rgb(98, 98, 98);
+  border-radius: 5px;
+}
+
+.edit-content {
+  padding: 1rem;
+  border-bottom: 1px solid;
+  border-color: rgb(98, 98, 98);
+}
+
+.edit-content-inner {
+  height: 120px;
+  position: relative;
+}
+.edit-content-inner b {
+  font-size: 0.8rem;
+  color: rgb(98, 98, 98);
+}
+.edit-content-inner p {
+  display: none;
+}
+
+.edit-content-half-inner {
+  height: 80px;
+  position: relative;
+}
+.edit-content-half-inner b {
+  font-size: 0.8rem;
+  color: rgb(98, 98, 98);
+}
+
+.pencil-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .main-content {
@@ -12462,6 +12505,8 @@ header {
   border-radius: 10px;
   text-align: center;
   width: 320px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .sidebar .profile {
   display: flex;
@@ -12575,6 +12620,9 @@ header {
   left: 1.5rem;
 }
 
+.profile-content {
+  margin-bottom: 1rem;
+}
 .profile-content .profile {
   display: flex;
   margin-top: 1rem;
@@ -12596,6 +12644,49 @@ header {
 .profile-content .name .profession {
   padding-top: 0.2rem;
   color: rgb(98, 98, 98);
+}
+
+.about-edit-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-content-inner ul {
+  display: flex;
+  margin-top: 1rem;
+}
+.edit-content-inner li {
+  margin-left: 1rem;
+}
+.edit-content-inner li:first-child {
+  margin-left: 0;
+}
+.edit-content-inner img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.directory-listing-input {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.directory-listing-input input {
+  width: 70%;
+  border-radius: 5px;
+}
+.directory-listing-input b {
+  font-size: 0.6rem;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+.contact-info .phone {
+  margin-right: 3rem;
 }
 
 @media (max-width: 1200px) {

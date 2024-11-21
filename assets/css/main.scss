@@ -402,6 +402,8 @@ header{
     border-radius: 10px;
     text-align: center;
     width: 320px;
+    height: fit-content;
+
 
     .profile {
         display: flex;
@@ -501,6 +503,7 @@ header{
 .right-section-image-upload{
     flex: 1;
     padding-left: 2rem;
+
 }
 
 
@@ -548,6 +551,7 @@ header{
 }
 
 .profile-content{
+    margin-bottom: 1rem;
     .profile{
         display: flex;
         margin-top: 1rem;
@@ -574,9 +578,54 @@ header{
     }
 }
 
+.about-edit-content{
+    display: flex; 
+    justify-content: space-between;
+}
 
 
 
+.edit-content-inner{
+    ul{
+        display: flex;
+        margin-top: 1rem;
+    }
+
+    li{
+        margin-left: 1rem;
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+
+    img{
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+}
+
+.directory-listing-input{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    input{
+        width: 70%;
+        border-radius: 5px;
+    }
+    b{
+        font-size: 0.6rem;
+    }
+}
+
+.contact-info{
+    display: flex; 
+    align-items: center;
+
+    .phone{
+        margin-right: 3rem;
+    }
+}
 
 
 

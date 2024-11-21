@@ -38,6 +38,10 @@ body{
 }
 
 
+.black{
+    color: $black-color!important;
+}
+
 .theme-btn{
     display: inline-block;
     border: none;
@@ -122,4 +126,48 @@ a{
     padding:0.5rem;
     border-radius: 50%;
     background-color: $white-color;
+}
+
+
+.section-border{
+    border: 1px solid;
+    border-color: $form-color;
+    border-radius: 5px;
+}
+
+.edit-content{
+    padding: 1rem;
+    border-bottom: 1px solid;
+    border-color: $form-color;
+
+}
+
+.edit-content-inner{
+    height: 120px;
+    position: relative;
+    b{
+        font-size: 0.8rem;
+        color: $form-color;
+    }
+    p{
+        display: none;
+        // height: 80%;
+        // overflow-y: scroll;
+    }
+}
+
+.edit-content-half-inner{
+    height: 80px;
+    position: relative;
+    b{
+        font-size: 0.8rem;
+        color: $form-color;
+    }
+
+}
+
+.pencil-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
