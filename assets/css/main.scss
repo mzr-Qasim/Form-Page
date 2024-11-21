@@ -277,9 +277,15 @@
 
 // Dashboard
 
+// Navbar
+
+header{
+    margin-bottom: $section-space-dashboard-page;
+}
+
 .navbar-brand{
     img{
-        width: 30px;
+        max-width: 50px;
     }
 }
 
@@ -380,6 +386,197 @@
     }
 
 }
+
+
+// Main-Hero-Section
+
+// sideBar
+
+.section-wrapper{
+    display: flex;
+}
+
+.sidebar {
+    border: 1px solid;
+    border-color: $form-color;
+    border-radius: 10px;
+    text-align: center;
+    width: 320px;
+
+    .profile {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+        padding-bottom: 20px;
+        gap: 12px;
+
+        .name {
+            text-align: left;
+
+
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 90%;
+            height: 1px;
+            background-color: $form-color;
+            transform: translateX(-50%);
+        }
+
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .sidebar-content {
+        padding: 20px;
+
+    }
+
+    ul {
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: $form-color;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 10px 0;
+
+            span {
+                margin-left: auto;
+                padding: 10px;
+                color: #36454F;
+
+            }
+
+            i {
+                color: #36454F;
+                font-size: 25px;
+
+            }
+
+
+            .badge {
+                background-color: #ff7300;
+                color: $white-color;
+                border-radius: 50%;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+            }
+
+            &:hover {
+                background-color: $secondary-color;
+                color: blue;
+                i{
+                    color: blue;
+                }
+            }
+        }
+
+    }
+}
+// right section
+
+.your-profile-heading{
+    margin-bottom: 1rem;
+    b{
+        font-size: 1.5rem;
+    }
+}
+
+
+.right-section-image-upload{
+    flex: 1;
+    padding-left: 2rem;
+}
+
+
+
+
+
+
+
+.image-upload-section{
+    background-color: $dashboard-image-section-color;
+    height: 350px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: $form-color;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-bottom: 1rem;
+
+    .icon-upload1{
+        font-size: 1.5rem;
+        color: $form-color;
+        padding-bottom: 1rem;
+    }
+    .file-upload{
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+
+    }
+    span{
+        font-weight: 600;
+        font-size: $form-fields-font-size;
+    }
+
+    .edit-icon{
+        position: absolute;
+        font-size: 1rem;
+        bottom: 1.5rem;
+        left: 1.5rem;
+    }
+}
+
+.profile-content{
+    .profile{
+        display: flex;
+        margin-top: 1rem;
+    }
+        .profile-image{
+            img{
+                width: 80px;
+                height: 80px;
+            }
+        }
+    .name{
+        padding: 0 1rem;
+        b{
+            font-size: 1.5rem;
+        }
+        p{
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+        .profession{
+            padding-top: 0.2rem;
+            color: $form-color;
+        }
+    }
+}
+
+
+
+
 
 
 

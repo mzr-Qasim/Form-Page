@@ -3,6 +3,8 @@ $secondary-color: #a1c3c6;
 $black-color: #000000;
 $white-color: #FFFFFF;
 
+
+
 $min-font-size: 1rem;
 
 $form-color: rgb(98, 98, 98);
@@ -24,6 +26,10 @@ $form-radio-font: calc(0.3rem + 0.5vw);
 
 $theme-links-height:2rem;
 $theme-links-border-radius: 20px;
+
+$section-space-dashboard-page: 2rem;
+$dashboard-image-section-color: #f7f7f7;
+
 body{
     overflow: hidden;
     overflow-y: auto;
@@ -96,4 +102,24 @@ a{
     font-size: 0.7rem;
     font-weight: bold;
 
+}
+
+
+.theme-profile-img{
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.theme-edit-anchor{
+    color: $form-color;
+}
+
+.theme-edit-icon{
+    font-size: 0.6rem;
+    border: 1px solid;
+    border-color: $form-color;
+    padding:0.5rem;
+    border-radius: 50%;
+    background-color: $white-color;
 }

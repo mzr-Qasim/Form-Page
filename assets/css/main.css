@@ -12151,6 +12151,25 @@ a {
   font-weight: bold;
 }
 
+.theme-profile-img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.theme-edit-anchor {
+  color: rgb(98, 98, 98);
+}
+
+.theme-edit-icon {
+  font-size: 0.6rem;
+  border: 1px solid;
+  border-color: rgb(98, 98, 98);
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
 .main-content {
   height: 100vh;
 }
@@ -12350,8 +12369,12 @@ a {
   font-size: 0.8rem;
 }
 
+header {
+  margin-bottom: 2rem;
+}
+
 .navbar-brand img {
-  width: 30px;
+  max-width: 50px;
 }
 
 .search-field {
@@ -12427,6 +12450,152 @@ a {
 .sign-in a span {
   font-size: 0.8rem;
   font-weight: bold;
+}
+
+.section-wrapper {
+  display: flex;
+}
+
+.sidebar {
+  border: 1px solid;
+  border-color: rgb(98, 98, 98);
+  border-radius: 10px;
+  text-align: center;
+  width: 320px;
+}
+.sidebar .profile {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  padding-bottom: 20px;
+  gap: 12px;
+}
+.sidebar .profile .name {
+  text-align: left;
+}
+.sidebar .profile::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 90%;
+  height: 1px;
+  background-color: rgb(98, 98, 98);
+  transform: translateX(-50%);
+}
+.sidebar img {
+  width: 50px;
+  height: 50px;
+}
+.sidebar .sidebar-content {
+  padding: 20px;
+}
+.sidebar ul a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgb(98, 98, 98);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 0;
+}
+.sidebar ul a span {
+  margin-left: auto;
+  padding: 10px;
+  color: #36454F;
+}
+.sidebar ul a i {
+  color: #36454F;
+  font-size: 25px;
+}
+.sidebar ul a .badge {
+  background-color: #ff7300;
+  color: #FFFFFF;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.sidebar ul a:hover {
+  background-color: #a1c3c6;
+  color: blue;
+}
+.sidebar ul a:hover i {
+  color: blue;
+}
+
+.your-profile-heading {
+  margin-bottom: 1rem;
+}
+.your-profile-heading b {
+  font-size: 1.5rem;
+}
+
+.right-section-image-upload {
+  flex: 1;
+  padding-left: 2rem;
+}
+
+.image-upload-section {
+  background-color: #f7f7f7;
+  height: 350px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: rgb(98, 98, 98);
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  margin-bottom: 1rem;
+}
+.image-upload-section .icon-upload1 {
+  font-size: 1.5rem;
+  color: rgb(98, 98, 98);
+  padding-bottom: 1rem;
+}
+.image-upload-section .file-upload {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+.image-upload-section span {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.image-upload-section .edit-icon {
+  position: absolute;
+  font-size: 1rem;
+  bottom: 1.5rem;
+  left: 1.5rem;
+}
+
+.profile-content .profile {
+  display: flex;
+  margin-top: 1rem;
+}
+.profile-content .profile-image img {
+  width: 80px;
+  height: 80px;
+}
+.profile-content .name {
+  padding: 0 1rem;
+}
+.profile-content .name b {
+  font-size: 1.5rem;
+}
+.profile-content .name p {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.profile-content .name .profession {
+  padding-top: 0.2rem;
+  color: rgb(98, 98, 98);
 }
 
 @media (max-width: 1200px) {
