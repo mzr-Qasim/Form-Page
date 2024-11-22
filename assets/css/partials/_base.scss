@@ -41,6 +41,14 @@ body{
 
 }
 
+.large-text{
+    font-size: calc(1.5rem + .25vw)!important;
+}
+
+.no-margin{
+    margin: 0!important;
+}
+
 
 .black{
     color: $black-color!important;
@@ -139,7 +147,7 @@ a{
 }
 
 .edit-content{
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
     &:not(:last-child){
         border-bottom: 1px solid $form-color;
     }
@@ -185,3 +193,4 @@ a{
     font-size: 0.8rem;
     font-weight: 500;
 }
+

@@ -404,6 +404,7 @@ header{
     text-align: center;
     max-width: 220px;
     height: fit-content;
+    margin-bottom: 1rem;
 
 
     .profile {
@@ -604,11 +605,20 @@ header{
         }
     }
 
+    .images-list{
+        text-align: center;
+        p{
+            font-weight: 500;
+            color: $form-color;
+        }
+    }
+
     img{
         width: 70px;
         height: 70px;
         object-fit: cover;
     }
+
 }
 
 .directory-listing-input{
@@ -653,6 +663,9 @@ footer{
 
 
 .footer-col{
+    ul{
+        margin-bottom: 1rem;
+    }
     li{
         &:not(:last-child){
             margin-bottom: 1rem;

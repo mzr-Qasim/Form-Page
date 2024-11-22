@@ -12090,6 +12090,14 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.large-text {
+  font-size: calc(1.5rem + 0.25vw) !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
 .black {
   color: #000000 !important;
 }
@@ -12180,7 +12188,7 @@ a {
 }
 
 .edit-content {
-  padding: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
 }
 .edit-content:not(:last-child) {
   border-bottom: 1px solid rgb(98, 98, 98);
@@ -12516,6 +12524,7 @@ header {
   max-width: 220px;
   height: -moz-fit-content;
   height: fit-content;
+  margin-bottom: 1rem;
 }
 .sidebar .profile {
   display: flex;
@@ -12670,6 +12679,13 @@ header {
 .edit-content-inner li:first-child {
   margin-left: 0;
 }
+.edit-content-inner .images-list {
+  text-align: center;
+}
+.edit-content-inner .images-list p {
+  font-weight: 500;
+  color: rgb(98, 98, 98);
+}
 .edit-content-inner img {
   width: 70px;
   height: 70px;
@@ -12710,6 +12726,9 @@ footer {
   width: 100px;
 }
 
+.footer-col ul {
+  margin-bottom: 1rem;
+}
 .footer-col li:not(:last-child) {
   margin-bottom: 1rem;
 }
