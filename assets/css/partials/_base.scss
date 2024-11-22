@@ -28,7 +28,11 @@ $theme-links-height:2rem;
 $theme-links-border-radius: 20px;
 
 $section-space-dashboard-page: 2rem;
+$sidebar-badge-color: #ff7300;
+$sidebar-hover-color: #3f70bc;
+$sidebar-hover-bg-color: #e5edfd;
 $dashboard-image-section-color: #f7f7f7;
+
 
 body{
     overflow: hidden;
@@ -130,16 +134,17 @@ a{
 
 
 .section-border{
-    border: 1px solid;
-    border-color: $form-color;
+    border: 1px solid  $form-color;
     border-radius: 5px;
 }
 
 .edit-content{
     padding: 1rem;
-    border-bottom: 1px solid;
-    border-color: $form-color;
-
+    &:not(:last-child){
+        border-bottom: 1px solid $form-color;
+    }
+    
+   
 }
 
 .edit-content-inner{
@@ -150,9 +155,11 @@ a{
         color: $form-color;
     }
     p{
-        display: none;
-        // height: 80%;
-        // overflow-y: scroll;
+
+        height: 80%;
+        overflow-y: auto;
+        font-size: 0.8rem;
+        font-weight: bold;
     }
 }
 

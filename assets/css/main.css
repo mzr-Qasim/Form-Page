@@ -12175,15 +12175,15 @@ a {
 }
 
 .section-border {
-  border: 1px solid;
-  border-color: rgb(98, 98, 98);
+  border: 1px solid rgb(98, 98, 98);
   border-radius: 5px;
 }
 
 .edit-content {
   padding: 1rem;
-  border-bottom: 1px solid;
-  border-color: rgb(98, 98, 98);
+}
+.edit-content:not(:last-child) {
+  border-bottom: 1px solid rgb(98, 98, 98);
 }
 
 .edit-content-inner {
@@ -12195,7 +12195,10 @@ a {
   color: rgb(98, 98, 98);
 }
 .edit-content-inner p {
-  display: none;
+  height: 80%;
+  overflow-y: auto;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .edit-content-half-inner {
@@ -12448,7 +12451,7 @@ header {
 }
 .search-field .search-title i {
   padding-left: 0.2rem;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   border-left: 1px solid black;
 }
 .search-field .icon-search1 {
@@ -12480,7 +12483,7 @@ header {
   color: #000000;
 }
 .custom-right-nav li a i {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .sign-in a {
@@ -12504,20 +12507,19 @@ header {
   border-color: rgb(98, 98, 98);
   border-radius: 10px;
   text-align: center;
-  width: 320px;
+  max-width: 220px;
   height: -moz-fit-content;
   height: fit-content;
 }
 .sidebar .profile {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 1rem 0.5rem;
   position: relative;
-  padding-bottom: 20px;
-  gap: 12px;
 }
 .sidebar .profile .name {
   text-align: left;
+  font-size: 0.8rem;
 }
 .sidebar .profile::after {
   content: "";
@@ -12534,43 +12536,45 @@ header {
   height: 50px;
 }
 .sidebar .sidebar-content {
-  padding: 20px;
+  padding: 1rem 0.5rem;
 }
-.sidebar ul a {
+.sidebar .sidebar-content ul a {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: rgb(98, 98, 98);
+  color: #000000;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
-  padding: 10px 0;
+  padding: 0.5rem 0;
 }
-.sidebar ul a span {
+.sidebar .sidebar-content ul a span {
   margin-left: auto;
   padding: 10px;
-  color: #36454F;
+  color: #000000;
 }
-.sidebar ul a i {
-  color: #36454F;
-  font-size: 25px;
+.sidebar .sidebar-content ul a i {
+  color: #000000;
+  margin-left: 0.5rem;
 }
-.sidebar ul a .badge {
+.sidebar .sidebar-content ul a .badge {
   background-color: #ff7300;
   color: #FFFFFF;
   border-radius: 50%;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
 }
-.sidebar ul a:hover {
-  background-color: #a1c3c6;
-  color: blue;
+.sidebar .sidebar-content ul a:hover {
+  background-color: #e5edfd;
+  color: #3f70bc;
 }
-.sidebar ul a:hover i {
-  color: blue;
+.sidebar .sidebar-content ul a:hover i {
+  color: #3f70bc;
 }
 
 .your-profile-heading {
@@ -12587,7 +12591,7 @@ header {
 
 .image-upload-section {
   background-color: #f7f7f7;
-  height: 350px;
+  height: 320px;
   border: 1px solid;
   border-radius: 5px;
   border-color: rgb(98, 98, 98);
@@ -12646,9 +12650,8 @@ header {
   color: rgb(98, 98, 98);
 }
 
-.about-edit-content {
-  display: flex;
-  justify-content: space-between;
+.user-edit-sections {
+  margin-bottom: 2rem;
 }
 
 .edit-content-inner ul {
@@ -12689,18 +12692,30 @@ header {
   margin-right: 3rem;
 }
 
+footer {
+  background-color: #000000;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.main-footer .footer-logo img {
+  width: 100px;
+}
+
 @media (max-width: 1200px) {
   .right-section {
     padding: 0 3rem;
   }
+  .ls-hide {
+    display: none !important;
+  }
 }
 @media (max-width: 991.5px) {
-  .search-field {
-    flex: 1;
-  }
   .search-field input {
-    width: 100%;
-    padding-left: 50%;
+    width: 300px;
   }
   .search-field .search-title span {
     margin-left: 2rem;
@@ -12734,6 +12749,18 @@ header {
     border: none;
     border-radius: 0;
     padding: 0;
+  }
+  .section-wrapper {
+    flex-direction: column;
+  }
+  .sidebar {
+    max-width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .right-section-image-upload {
+    flex: auto;
+    padding-left: 0;
   }
 }
 @media (max-width: 768px) {

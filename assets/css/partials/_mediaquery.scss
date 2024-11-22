@@ -3,6 +3,9 @@
         padding: 0 3rem;
     
     }
+    .ls-hide{
+        display: none !important;
+    }
 
 
 }
@@ -10,11 +13,9 @@
 
 @media (max-width: 991.5px){
     .search-field{
-        flex: 1;
             input{
                 
-                width: 100%;
-                padding-left: 50%;
+                width: 300px;
             }
             .search-title{
                 span{                  
@@ -22,6 +23,8 @@
                 }
             }
         }
+
+
     .theme-links{
 
         font-size: $min-font-size;
@@ -62,6 +65,21 @@
         padding: 0;
 
     }
+    // sidebar
+    .section-wrapper{
+        flex-direction: column;
+    }
+
+    .sidebar {
+        max-width: 100%;
+        height: fit-content;
+    }
+    .right-section-image-upload{
+        flex: auto;
+        padding-left: 0;
+    
+    }
+    
     
     
 }
