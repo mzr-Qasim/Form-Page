@@ -12216,6 +12216,12 @@ a {
   right: 0;
 }
 
+.footer-link {
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
 .main-content {
   height: 100vh;
 }
@@ -12697,12 +12703,41 @@ footer {
 }
 
 .main-footer {
-  display: flex;
-  justify-content: space-between;
   padding: 2rem 0;
 }
-.main-footer .footer-logo img {
+
+.footer-logo img {
   width: 100px;
+}
+
+.footer-col li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.facbook-link li {
+  font-size: 0.8rem;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.facbook-link span {
+  display: inline-flex;
+  align-items: center;
+}
+.facbook-link span i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.copyright-section {
+  border-top: 1px solid rgb(98, 98, 98);
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.copyright-section p {
+  color: rgb(98, 98, 98);
+  font-weight: 500;
+  font-size: calc(0.5rem + 0.25vw);
 }
 
 @media (max-width: 1200px) {
@@ -12777,6 +12812,9 @@ footer {
     width: 100%;
     position: absolute;
   }
+  .section-border {
+    margin-top: 1rem;
+  }
 }
 @media (max-width: 576px) {
   .mb-hide {
@@ -12816,5 +12854,11 @@ footer {
   }
   .search-field .search-title {
     display: none;
+  }
+  .edit-content-inner img {
+    width: 35px;
+    height: 35px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -642,16 +642,53 @@ footer{
 }
 
 .main-footer{
-    display: flex;
-    justify-content: space-between;
     padding: 2rem 0;
-    .footer-logo{
-        img{
-            width: 100px;
+}
 
+.footer-logo{
+    img{
+        width: 100px;
+    }
+}
+
+
+.footer-col{
+    li{
+        &:not(:last-child){
+            margin-bottom: 1rem;
         }
     }
 }
+
+.facbook-link{
+    li{
+        font-size: 0.8rem;
+        color: $white-color;
+        font-weight: 500;
+    }
+    span{
+        display: inline-flex;
+        align-items: center;
+        i{
+            font-size: 1.5rem; 
+            margin-right: 1rem;
+        }
+    }
+}
+
+.copyright-section{
+    border-top: 1px solid $form-color; 
+    display: flex; 
+    justify-content: center; 
+    padding: 1rem 0;
+
+    p{
+        color: $form-color;
+        font-weight: 500;
+        font-size: calc(0.5rem + .25vw);
+    }
+}
+
 
 
 

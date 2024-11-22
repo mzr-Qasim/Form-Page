@@ -108,6 +108,10 @@
 
     }
 
+    .section-border{
+        margin-top: 1rem;
+    }
+
 }
 
 @media (max-width: 576px){
@@ -159,6 +163,15 @@
             }
         .search-title{
             display: none; 
+        }
+    }
+
+    .edit-content-inner{
+    
+        img{
+            width: 35px;
+            height: 35px;
+            object-fit: cover;
         }
     }
     
