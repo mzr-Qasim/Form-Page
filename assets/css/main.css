@@ -12856,9 +12856,27 @@ footer {
     display: none;
   }
   .edit-content-inner img {
-    width: 35px;
-    height: 35px;
+    width: 60px;
+    height: 60px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .edit-content-half-inner {
+    height: 120px;
+  }
+  .directory-listing-input {
+    flex-direction: column;
+    align-items: start;
+  }
+  .directory-listing-input input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .contact-info {
+    flex-direction: column;
+    align-items: start;
+  }
+  .contact-info .phone {
+    margin-right: 0;
   }
 }/*# sourceMappingURL=main.css.map */
