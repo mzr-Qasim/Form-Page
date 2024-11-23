@@ -12091,7 +12091,7 @@ body {
 }
 
 .large-text {
-  font-size: calc(1.5rem + 0.25vw) !important;
+  font-size: calc(1.2rem + 0.25vw) !important;
 }
 
 .no-margin {
